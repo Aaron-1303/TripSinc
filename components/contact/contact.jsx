@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import './contact.css';
+import Swal from 'sweetalert2';
 
 export default function Contact() {
     const [showOther, setShowOther] = useState(false);
@@ -8,9 +9,18 @@ export default function Contact() {
     const handleBusinessTypeChange = (e) => {
         setShowOther(e.target.value === 'other');
     }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        Swal.fire({
+            icon: 'success',
+            title: 'Success!',
+            text: 'Your message has been sent successfully.',
+        });
+    }
     return (
         <section className="contact" >
-            <form>
+            <form onSubmit={handleSubmit}>
                 <h2>Interested in becoming a service provider?</h2>
                 <p>Fill out the form below and we'll get back to you as soon as possible.</p>
                 <div className="input-box">
