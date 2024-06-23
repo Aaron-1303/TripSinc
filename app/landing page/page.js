@@ -9,7 +9,7 @@ export default function LandingPage() {
     </main>
 <Link href="/users">
     <footer className='flex flex-col items-center justify-center bg-blue-400 w-full '>
-  <button className='p-4 text-4xl font-bold'>Let's plan your trip!!</button>
+  <button className='p-4 text-4xl font-bold '>Let's plan your trip!!</button>
 </footer>
 </Link>
     </>

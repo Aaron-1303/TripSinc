@@ -21,19 +21,19 @@ export default function Users() {
           </DropdownMenuTrigger>
           <DropdownMenuContent className="w-40 rounded-md bg-white p-2 shadow-lg dark:bg-gray-800  ">
             <DropdownMenuItem>
-              <Link href="/auth/sign-in" className="flex items-center gap-2 hover:text-primary " prefetch={false} >
+              <Link href="/tourist" className="flex items-center gap-2 hover:text-primary "  >
               <FontAwesomeIcon icon="fa-solid fa-suitcase" />
                 Tourist
               </Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Link href="/auth/loginRestaurant" className="flex items-center gap-2 hover:text-primary" prefetch={false}>
+              <Link href="#" className="flex items-center gap-2 hover:text-primary" prefetch={false}>
               <FontAwesomeIcon icon="fa-solid fa-utensils" />
                 Local Guide
               </Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Link href="/sait-staff/login" className="flex items-center gap-2 hover:text-primary" prefetch={false}>
+              <Link href="#" className="flex items-center gap-2 hover:text-primary" prefetch={false}>
               <FontAwesomeIcon icon="fa-solid fa-user-tie" />
                 Service Provider
               </Link>
