@@ -11,50 +11,44 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@
 import { Input } from "@/components/ui/input"
 import { Popover, PopoverTrigger, PopoverContent } from "@/components/ui/popover"
 import { Calendar } from "@/components/ui/calendar"
-
+import Header from "../header/page"
 export default function Tourist() {
   const [fromDate, setFromDate] = useState(null)
   const [toDate, setToDate] = useState(null)
   return (<>
-    <div className="w-full max-w-7xl mx-auto p-4">
-      <header className="flex items-center justify-between py-4">
-        <div className="flex items-center space-x-2">
-          <MenuIcon className="h-6 w-6" />
-          <div className="text-2xl font-bold text-orange-600">Trip Sinc</div>
-        </div>
-        <Button variant="outline">Sign in</Button>
-      </header>
-      <div className="flex space-x-4">
+    <div className="w-full  mx-auto ">
+      <Header />
+      <div className="flex space-x-4 mt-6">
         <aside className="w-1/4">
-          <nav className="space-y-2">
-            <Button variant="ghost" className="w-full text-left">
+          <nav className="space-y-2 ">
+            <Button variant="ghost" className="w-full text-left hover:bg-blue-600 hover:underline">
               Flights
             </Button>
-            <Button variant="ghost" className="w-full text-left">
+            <Button variant="ghost" className="w-full text-left hover:underline">
               Stays
             </Button>
-            <Button variant="ghost" className="w-full text-left">
+            <Button variant="ghost" className="w-full text-left hover:underline">
               Cars
             </Button>
-            <Button variant="ghost" className="w-full text-left">
+            <Button variant="ghost" className="w-full text-left hover:underline">
               Flight+Hotel
             </Button>
-            <Button variant="ghost" className="w-full text-left">
+            <Button variant="ghost" className="w-full text-left hover:underline">
               Ask TRIP SINC
             </Button>
-            <Button variant="ghost" className="w-full text-left">
+            <Button variant="ghost" className="w-full text-left hover:underline">
               Explore
             </Button>
-            <Button variant="ghost" className="w-full text-left">
+            <Button variant="ghost" className="w-full text-left hover:underline">
               Flight Tracker
             </Button>
-            <Button variant="ghost" className="w-full text-left">
+            <Button variant="ghost" className="w-full text-left hover:underline">
               Best Time to Travel
             </Button>
-            <Button variant="ghost" className="w-full text-left">
+            <Button variant="ghost" className="w-full text-left hover:underline">
               TRIP SINC for Business
             </Button>
-            <Button variant="ghost" className="w-full text-left">
+            <Button variant="ghost" className="w-full text-left hover:underline">
               Trips
             </Button>
           </nav>
@@ -72,7 +66,7 @@ export default function Tourist() {
                   <SelectValue placeholder="Return" />
                 </SelectTrigger>
                 <SelectContent className="bg-green-400">
-                  <SelectItem value="return">Return</SelectItem>
+                  <SelectItem value="return">Two-way</SelectItem>
                   <SelectItem value="one-way">One-way</SelectItem>
                   <SelectItem value="multi-city">Multi-city</SelectItem>
                 </SelectContent>
@@ -108,8 +102,8 @@ export default function Tourist() {
                 </SelectContent>
               </Select>
             </div>
-            <div className="flex items-center space-x-4 mt-4">
-              <Input placeholder="Toronto (YYZ)" />
+            <div className="flex items-center space-x-4" style={{ marginTop: '120px' }}>
+              <Input placeholder="Calgary (YYC)" />
               <ShuffleIcon className="h-6 w-6" />
               <Input placeholder="To?" />
               <Popover>

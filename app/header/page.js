@@ -33,7 +33,7 @@ export default function Header() {
           </DropdownMenuTrigger>
           <DropdownMenuContent className="w-40 rounded-md bg-white p-2 shadow-lg dark:bg-gray-800  ">
             <DropdownMenuItem>
-              <Link href="/tourist" className="flex items-center gap-2 hover:text-primary bg-gray-400 "  >
+              <Link href="/personality" className="flex items-center gap-2 hover:text-primary bg-gray-400 "  >
               <FontAwesomeIcon icon="fa-solid fa-suitcase" />
                 Tourist
               </Link>

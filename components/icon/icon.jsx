@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-
+import Link from 'next/link';
 import {
     FaTree, FaUtensils, FaMoon, FaCocktail, FaLandmark, FaSpa, FaShoppingBag, FaTheaterMasks, FaFutbol, FaCamera, FaRunning, FaGuitar, FaPaintBrush, FaYinYang, FaBed, FaSeedling
 } from 'react-icons/fa';
@@ -68,8 +68,9 @@ export default function Icon() {
 
     }
 
-    return (
+    return (<>
         <div className="icon">
+            
             <h2 className="header">Select Your Travel Interests (Maximum 4) </h2>
             <div className="icon-container">
                 {icons.map(({ id, icon, label }) => (
@@ -81,6 +82,10 @@ export default function Icon() {
             </div>
             <p className="icon-info">Hey, tell us about yourself. Which of these do you love doing when you travel? (Select up to 4)</p>
             <button type="submit" onClick={handleSubmit}>Submit</button>
+            <Link href="/tourist"> <button className='ml-10'>Let's Plan</button></Link>
+           
         </div>
+        
+        </>
     );
 };
